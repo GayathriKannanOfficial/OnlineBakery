@@ -7,4 +7,6 @@ FrontEnd:
 Backend:
   --I have developed the backend of the project in Springboot.
 
+DB : Mysql
+
   
