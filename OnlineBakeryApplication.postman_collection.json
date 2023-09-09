@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "89ed3347-2c08-4aae-a3bd-2da23dfea962",
+		"name": "OnlineBakeryApplication",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29578361"
+	},
+	"item": [
+		{
+			"name": "createOrder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderItem\" : \"Cookies\",\r\n    \"branchName\" : \"Chennai_2\",\r\n    \"branchId\" : 20 ,\r\n    \"customerName\" : \"Sam\",\r\n    \"customerId\" : 200\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/order/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"order",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllOrders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/order/getAll",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"order",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
